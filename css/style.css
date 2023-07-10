@@ -1,0 +1,143 @@
+*
+.jumbotron{
+  background-image: url("/media/imagenfondo3.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ec6a00;
+  border-color: rgb(0, 0, 0);
+}
+ .jumbotron p {
+color: rgb(255, 255, 255);
+ }
+
+.jumbotron h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-size: 24px;
+}
+
+
+.main-content {
+  padding: 50px 0;
+}
+
+.image-card {
+  margin-bottom: 30px;
+}
+
+.logo-img {
+  width: 60px;
+  height: 50px;
+}
+
+/* Estilos para el menú hamburguesa */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url('ruta-del-icono');
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.custom-toggler .navbar-toggler-text {
+  margin-left: 5px;
+}
+
+
+/* Estilos para los nav-items */
+.navbar-nav .nav-item {
+  margin-right: 15px;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #777;
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #000000;
+  padding: 20px 0;
+  color: #ffffff;
+}
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+  
+
+ /* Estilos personalizados Nosotros */
+ body {
+  background-color: #f8f9fa;
+}
+
+.container_ {
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color:  #ec6a00;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.main-content_ {
+  margin-top: 40px;
+}
+
+.main-content_ img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+  
+
+
+    
+
+
