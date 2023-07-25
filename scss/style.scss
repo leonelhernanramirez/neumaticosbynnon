@@ -1,0 +1,128 @@
+// Variables de colores
+$color-primary: #ec6a00;
+$color-secondary: #ffffff;
+$color-background: #f8f9fa;
+$color-footer-background: #000000;
+
+// Variables de tamaños
+$font-size-h1: 32px;
+$font-size-p: 16px;
+$font-size-hamburger-icon: 20px;
+
+// Variables de espaciado
+$padding-container: 40px;
+$padding-main-content: 50px;
+$margin-image-card: 30px;
+$margin-image-content: 40px;
+
+.jumbotron {
+  background-image: url("/media/imagenfondo3.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color-primary;
+  border-color: rgb(0, 0, 0);
+
+  p {
+    color: $color-secondary;
+  }
+
+  h1 {
+    font-size: $font-size-h1;
+    font-weight: bold;
+  }
+}
+
+// Mixin para estilos del menú hamburguesa
+@mixin menu-icon {
+  background-image: url('ruta-del-icono');
+  width: $font-size-hamburger-icon;
+  height: $font-size-hamburger-icon;
+  background-size: cover;
+  color: $color-secondary;
+}
+
+// Mixin para estilos del footer link
+@mixin footer-link {
+  color: $color-secondary;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #777;
+  }
+}
+
+.custom-toggler .navbar-toggler-icon {
+  @include menu-icon;
+}
+
+.custom-toggler .navbar-toggler-text {
+  margin-left: 5px;
+}
+
+footer {
+  background-color: $color-footer-background;
+  padding: 20px 0;
+  color: $color-secondary;
+
+  .footer-link {
+    @include footer-link;
+  }
+}
+
+body {
+  background-color: $color-background;
+
+  .container_ {
+    padding: $padding-container;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    h1 {
+      color: $color-primary;
+      font-size: $font-size-h1;
+      font-weight: bold;
+      margin-bottom: $margin-image-content;
+    }
+
+    p {
+      color: $color-background;
+      font-size: $font-size-p;
+      line-height: 1.6;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .main-content_ {
+      margin-top: $margin-image-content;
+
+      img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: $margin-image-card;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: $padding-container;
+  }
+
+  h1 {
+    font-size: $font-size-h1 - 4;
+  }
+
+  p {
+    font-size: $font-size-p - 2;
+  }
+}
+

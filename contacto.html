@@ -5,76 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css" rel="stylesheet"> 
 </head>
 <body>
-  <main>
-    <header class="titulo">
-        <h1> Contacto</h1> 
-        <hr/>
-    </header> 
-    <nav class="enlaces">
-        <a href="./index.html">Inicio</a>
-        <a href="./contacto.html">Contacto</a>
-        <a href="./nosotros.html">Nosotros</a>
-        <a href="./productos.html">Productos</a>
-        <a href="./servicios.html">Servicios</a>       
-    </nav>
-    <nav>
-        <img src="./media/logoauto.jpg" alt="logo empresa">
-    </nav>
-    <hr/> 
-    <section id="contacto">
-        <h2>Contacto</h2>
-          <div>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-          </div>
-          <div>
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required>
-          </div>
-          <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div>
-            <label for="ciudad">Ciudad:</label>
-            <input type="text" id="ciudad" name="ciudad" required>
-          </div>
-          <div>
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" required>
-          </div>
-          <div>
-            <label for="asunto">Asunto:</label>
-            <input type="text" id="asunto" name="asunto" required>
-          </div>
-          <div>
-            <input type="submit" value="Enviar">
-          </div>
-      </section>
-    </main>
-      <footer>
-        <div class="footer"> 
-              <p>&copy; 2023 Neumaticos Bynnon. Todos los derechos reservados.</p>
-              <ul>
-                <li><a href="./index.html"> Volver al Inicio</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-              </ul>
+    <main>
+        <header class="titulo">
+            <div class="container">
+                <h1> Contacto</h1> 
+                <hr class="my-4">
             </div>
-            <div class="redes">
-                <ul class="media">
-                  <li><a href="./https://www.facebook.com/neumaticosbynnonjosemarmol/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="./https://www.instagram.com/neumaticosbynnon/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-              </div>
-          
-          </footer>
-       
+        </header> 
+        <nav class="enlaces bg-dark">
+            <div class="container">
+                <a href="./index.html" class="nav-link">Inicio</a>
+                <a href="./contacto.html" class="nav-link active">Contacto</a>
+                <a href="./nosotros.html" class="nav-link">Nosotros</a>
+                <a href="./productos.html" class="nav-link">Productos</a>
+                <a href="./servicios.html" class="nav-link">Servicios</a>       
+            </div>
+        </nav>
+        <hr class="my-4"> 
+        <section id="contacto">
+            <div class="container">
+                <h2 class="mb-4">Contacto</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellido" class="form-label">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="ciudad" class="form-label">Ciudad:</label>
+                        <input type="text" id="ciudad" name="ciudad" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="asunto" class="form-label">Asunto:</label>
+                        <input type="text" id="asunto" name="asunto" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="submit" value="Enviar" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-white">
+        <div class="container py-3">
+            <p>&copy; 2023 Neumaticos Bynnon. Todos los derechos reservados.</p>
+            <ul class="nav">
+                <li class="nav-item"><a href="./index.html" class="nav-link">Volver al Inicio</a></li>
+                <li class="nav-item"><a href="./contacto.html" class="nav-link">Contacto</a></li>
+                <li class="nav-item"><a href="./nosotros.html" class="nav-link">Nosotros</a></li>
+                <li class="nav-item"><a href="./productos.html" class="nav-link">Productos</a></li>
+                <li class="nav-item"><a href="./servicios.html" class="nav-link">Servicios</a></li>
+            </ul>
+        </div>
+        <div class="container py-2">
+            <ul class="nav media">
+                <li class="nav-item"><a href="https://www.facebook.com/neumaticosbynnonjosemarmol/" target="_blank" class="nav-link"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="nav-item"><a href="https://www.instagram.com/neumaticosbynnon/" target="_blank" class="nav-link"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/popper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
