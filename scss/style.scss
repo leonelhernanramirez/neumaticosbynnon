@@ -1,63 +1,43 @@
-// Variables de colores
-$color-primary: #ec6a00;
-$color-secondary: #ffffff;
-$color-background: #f8f9fa;
-$color-footer-background: #000000;
 
-// Variables de tamaños
-$font-size-h1: 32px;
-$font-size-p: 16px;
-$font-size-hamburger-icon: 20px;
-
-// Variables de espaciado
-$padding-container: 40px;
-$padding-main-content: 50px;
-$margin-image-card: 30px;
-$margin-image-content: 40px;
-
-.jumbotron {
-  background-image: url("/media/imagenfondo3.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 500px;
+@mixin center-contents {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $color-primary;
-  border-color: rgb(0, 0, 0);
-
-  p {
-    color: $color-secondary;
-  }
-
-  h1 {
-    font-size: $font-size-h1;
-    font-weight: bold;
-  }
 }
 
-// Mixin para estilos del menú hamburguesa
-@mixin menu-icon {
-  background-image: url('ruta-del-icono');
-  width: $font-size-hamburger-icon;
-  height: $font-size-hamburger-icon;
-  background-size: cover;
-  color: $color-secondary;
-}
-
-// Mixin para estilos del footer link
-@mixin footer-link {
-  color: $color-secondary;
-  text-decoration: none;
+@mixin hover-transition {
   transition: color 0.3s;
 
   &:hover {
     color: #777;
   }
+.jumbotron1 {
+  background-image: url("/media/imagenfondo.jpg")
+}
+.jumbotron {
+  background-image: url("/media/imagenfondo3.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  @include center-contents;  // Aplicando el mixin center-contents
+  color: #ff9100;
+  border-color: rgb(0, 0, 0);
+
+  p {
+    color: #ffffff;
+  }
+
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+  }
 }
 
 .custom-toggler .navbar-toggler-icon {
-  @include menu-icon;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  color: #ffffff;
 }
 
 .custom-toggler .navbar-toggler-text {
@@ -65,34 +45,37 @@ $margin-image-content: 40px;
 }
 
 footer {
-  background-color: $color-footer-background;
+  background-color: #000000;
   padding: 20px 0;
-  color: $color-secondary;
+  color: #ffffff;
 
   .footer-link {
-    @include footer-link;
+    color: #ffffff;
+    text-decoration: none;
+    @include hover-transition; // Aplicando el mixin hover-transition
   }
 }
 
 body {
-  background-color: $color-background;
+  background-color: #f8f9fa;
 
   .container_ {
-    padding: $padding-container;
+    padding: 40px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-    h1 {
-      color: $color-primary;
-      font-size: $font-size-h1;
+
+    h1{
+      color: #f5750c;
+      font-size: 32px;
       font-weight: bold;
-      margin-bottom: $margin-image-content;
+      margin-bottom: 40px;
     }
 
     p {
-      color: $color-background;
-      font-size: $font-size-p;
+      color: #ffffff;
+      font-size: 16px;
       line-height: 1.6;
     }
 
@@ -101,12 +84,12 @@ body {
     }
 
     .main-content_ {
-      margin-top: $margin-image-content;
+      margin-top: 40px;
 
       img {
         width: 100%;
         border-radius: 8px;
-        margin-bottom: $margin-image-card;
+        margin-bottom: 30px;
       }
     }
   }
@@ -114,15 +97,14 @@ body {
 
 @media (max-width: 576px) {
   .container {
-    padding: $padding-container;
+    padding: 40px;
   }
 
   h1 {
-    font-size: $font-size-h1 - 4;
+    font-size: 28px;
   }
 
   p {
-    font-size: $font-size-p - 2;
+    font-size: 14px;
   }
 }
-
