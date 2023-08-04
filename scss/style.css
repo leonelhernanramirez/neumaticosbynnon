@@ -1,5 +1,5 @@
 .jumbotron {
-  background-image: url("./media/imagenfondo3.jpg");
+  background-image: url("../media/imagenfondo3.jpg");
   background-size: cover;
   background-position: center;
   height: 500px;
@@ -72,6 +72,15 @@ body .container_ .main-content_ img {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 30px;
+}
+
+.modal-dialog.modal-lg {
+  max-width: 80%;
+}
+
+.modal-body img {
+  max-height: 70vh;
+  width: auto;
 }
 
 @media (max-width: 576px) {
