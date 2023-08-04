@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ec6a00;
+  color: #ff9100;
   border-color: rgb(0, 0, 0);
 }
 .jumbotron p {
@@ -52,7 +52,7 @@ body .container_ {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 body .container_ h1 {
-  color: #ec6a00;
+  color: #f5750c;
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 40px;
@@ -84,4 +84,4 @@ body .container_ .main-content_ img {
   p {
     font-size: 14px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
