@@ -13,7 +13,7 @@
   }
 }
 .jumbotron {
-  background-image: url("../media/imagenfondo3.jpg");
+  background-image: url(".../media/imagenfondo3.jpg");
   background-size: cover;
   background-position: center;
   height: 500px;
@@ -44,7 +44,7 @@
 
 footer {
   background-color: #000000;
-  padding: 20px 0;
+  padding: 20px;
   color: #ffffff;
 
   .footer-link {
